@@ -41,3 +41,32 @@
     50% { color: aquamarine; }
     100% { color: teal; }
 }
+
+.heavy-box {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, .1);
+}
+.svgShadow {
+    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+    -webkit-filter: drop-shadow( 0px 6px 15px rgba(0, 0, 0, .1) ); 
+            filter: drop-shadow( 0px 6px 15px rgba(0, 0, 0, .1) );
+}
+.subtle-shadow {
+    box-shadow: 0px -6px 15px rgba(0, 0, 0, 0.05),0px 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.funny-link {
+    color: #A0B7FD;
+}
+.body-color {
+    color: #2A344E;
+}
+.sub-heading-color {
+    color: #7F87A1;
+}
+.heading-color {
+    color: #2A344E;
+}
+.highlight-color {
+    background-color: #85EDC5;
+}
