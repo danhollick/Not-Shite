@@ -16,15 +16,37 @@
 </head>
   <!--  -->
   <body class="sans-serif" style="-webkit-font-smoothing: antialiased">
-  		<div class="h3 heavy-box z-2 fixed bg-white w-100 flex justify-center items-center">
-        <div class="mw8 h-100  w-100 flex justify-between items-center">
+  		<div class="h3 heavy-box z-2 fixed bg-white w-100 flex justify-center ">
+        <div class="mw8 h-100 w-100 flex justify-between items-center">
             <h2 class="f4 fw4 heading-color"><span class="sub-heading-color">/</span> tanya hirst</h2>
           <div class="h-100 flex items-center">
+            <div class="h-100 tabs flex flex-column">
+              <input type="radio" id="tab1" name="tab-control" checked>
+              <input type="radio" id="tab2" name="tab-control">
+              <input type="radio" id="tab3" name="tab-control"> 
+              <input type="radio" id="tab4" name="tab-control">
+              <ul class="flex items-center justify-center h-100">
+                <li title="tab 1"><label href="#_about" class="mr5 fw5 link sub-heading-color dim pointer link-to-section" for="tab1" role="button"><span href="#_about">About</span></label></li>
+                <li title="tab 2"><label href="#_work" class="mh5 fw5 link sub-heading-color dim pointer link-to-section" for="tab2" role="button"><span href="#_work">Work</span></label></li>
+                <li title="tab 3"><label href="#_contact" class="ml5 fw5 mr4 link sub-heading-color dim pointer link-to-section" for="tab3" role="button"><span href="#_contact">Contact</span></label></li>
+              </ul>
+              <div class="slider ">
+                  <div class="indicator"></div>
+                </div>
+            </div>
+              
+
+
+            <!-- <div class="slider">
+              <div class="indicator"></div>
+            </div>
             <div class="h-100 flex items-center justify-around">
+              
               <a href="#_about" class="mh5 link sub-heading-color dim pointer link-to-section">About</a>
               <a href="#_work" class="mh5 link sub-heading-color dim pointer link-to-section">Work</a>
               <a href="#_contact" class="ml5 link sub-heading-color dim pointer link-to-section">Contact</a>
-            </div>
+            </div> -->
+            
           </div>
         </div>
       </div>
