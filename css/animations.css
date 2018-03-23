@@ -1,3 +1,5 @@
+.Lato {font-family: 'Lato', sans-serif;}
+
 .logo {
 	position: relative;
 	transform: scale(1) rotate(0deg);
@@ -25,7 +27,7 @@
     color: #A0B7FD;
 }
 .body-color {
-    color: #2A344E;
+    color: #545C70;
 }
 .sub-heading-color {
     color: #7F87A1;
