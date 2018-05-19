@@ -1,151 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <title> Tanya Hirst </title>
+
 <head>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="/css/tachyons.min.css">
-  <link rel="stylesheet" href="/css/animations.css">
-  <link rel="shortcut icon" href="./assets/favicon-home.ico" >
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="shortcut icon" href="./assets/favicon.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:url" content="https://notshite.com/index.html" >
-  <meta property="og:type" content="website" >
-  <meta property="og:title" content="Tanya Hirst: Product Designer" >
-  <meta property="og:description" content="Hey, welcome to my portfolio" >
-  <!-- <meta property="og:image:type" content="image/png" >
-  <meta property="og:image" content="https://alcohollick.com/assets/aboutPreview.png" > -->
+  <meta property="og:url" content="https://notshite.com/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tanya Hirst: Product Designer">
+  <meta property="og:description" content="Hi, nice to meet you.">
+  <meta property="og:image:type" content="image/png" >
+  <meta property="og:image" content="https://notshite.com/assets/preview.png" >
 </head>
-  <!--  -->
-  <body class="sans-serif Lato" style="-webkit-font-smoothing: antialiased">
-  		<div class="h3 heavy-box z-2 fixed bg-white w-100 flex justify-center ">
-        <div class="mw8 h-100 w-100 flex justify-between items-center">
-            <h2 class="f4 fw4 heading-color"><span class="sub-heading-color">/</span> tanya hirst</h2>
-          <div class="h-100 flex items-center">
-            <div class="h-100 tabs flex flex-column">
-              <input type="radio" id="tab1" name="tab-control" checked>
-              <input type="radio" id="tab2" name="tab-control">
-              <input type="radio" id="tab3" name="tab-control"> 
-              <input type="radio" id="tab4" name="tab-control">
-              <ul class="flex items-center justify-center h-100">
-                <li title="tab 1"><label href="#_about" class="mr5 fw5 link sub-heading-color dim pointer link-to-section" for="tab1" role="button"><span href="#_about">About</span></label></li>
-                <li title="tab 2"><label href="#_work" class="mh5 fw5 link sub-heading-color dim pointer link-to-section" for="tab2" role="button"><span href="#_work">Work</span></label></li>
-                <li title="tab 3"><label href="#_contact" class="ml5 fw5 mr4 link sub-heading-color dim pointer link-to-section" for="tab3" role="button"><span href="#_contact">Contact</span></label></li>
-              </ul>
-              <div class="slider ">
-                  <div class="indicator"></div>
-                </div>
-            </div>
+
+<body class="sans-serif Lato" style="-webkit-font-smoothing: antialiased">
+  <div class="h3 heavy-box z-2 fixed bg-white w-100 flex justify-center ">
+    <div class="mw8-l ph4-m ph3 h-100 w-100 flex justify-between items-center">
+      <h2 class="f4-ns f5 fw4 heading-color">
+        <span class="sub-heading-color">/</span> tanya hirst</h2>
+      <div class="h-100 tabs flex items-center">
+        <div class=" h-100 mr4 flex flex-column">
+          <div class="h-100 ph0 flex items-center justify-center">
+            <a href="#_about" class="mr4-l mr4-m mr2 fw5 f5-l f6 ml4-l ml2-m link sub-heading-color dim pointer link-to-section">About</a>
+          </div>
+          <div id="_aboutIndicator" class="fade-in-element" style="height: 2px;"></div>
+        </div>
+        <div class=" h-100 mr4 flex flex-column">
+          <div class="h-100 ph0 flex items-center justify-center">
+            <a href="#_work" class="mr4-l mr4-m mr2 fw5 f5-l f6 ml4-l ml2-m link sub-heading-color dim pointer link-to-section">Work</a>
+          </div>
+          <div id="_workIndicator" class=""></div>
+        </div>
+        <div class=" h-100 flex flex-column">
+          <div class="h-100 ph0 flex items-center justify-center">
+            <a href="#_contact" class="mr4-l mr4-m mr2 fw5 f5-l f6 ml4-l ml2-m link sub-heading-color dim pointer link-to-section">Contact</a>
+          </div>
+          <div id="_contactIndicator" class=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex items-center flex-column" style="background-color: #fcfcfc">
+    <div class="h3" id="_top"></div>
+    <div class="vh-75 w-100 flex items-center justify-center bg-black-10" style="background-image: url('./assets/Main-Image.png');background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="flex items-center flex-column">
+        <h1 style="font-size: 4rem;" class="fw5 heading-color">
+          <span class="sub-heading-color">/</span> hi.</h1>
+        <a href="#_about" class="link link-to-section">
+          <div href="#_about" class="grow pointer heavy-box ph6-ns ph5 pv1 bg-white" style="border-radius: 100px">
+            <p href="#_about" class="heading-color">oh, hello</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="mw8-l ph4-m ph4 w-100 pt7-ns pt6 pb6 reveal" id="_about">
+      <h2 class="f2 fw3 heading-color">
+        <span class="sub-heading-color">/</span> i’m Tanya.</h2>
+      <h3 class="f3 fw2 sub-heading-color">they call me a product designer.</h3>
+      <p class="measure body-color mt5 lh-copy">i design interfaces, illustrate stuff and occasionally write interesting shit. i’m lead product designer at a Norwegian
+        Fintech startup called
+        <a href="https://getspiff.no/" target="_blank" class="funny-link link light-purple dim pointer">Spiff</a>. a couple years back you could find me at
+        <a href="https://www.cerebra.co.za/" target="_blank" class="funny-link link light-purple dim pointer">Cerebra.</a>
+      </p>
+    </div>
+    <div class="vh-75-ns vh-50-m vh-100 mw8-l ph4-m w-100 flex-ns">
+      <div class="w-third-ns vh-50 h-100-ns bg-black-10 cover" style="background-image: url('./assets/Face.png'); background-position: center; "></div>
+      <div class="ml2-ns mt0-ns mt2 w-two-thirds-ns h-100-ns vh-50 bg-black-10 cover" style="background-image: url('./assets/Ice-cream.png'); background-position: center;"></div>
+    </div>
+    <div class="pt7-ns pt6 pb6-ns pb-5 w-100 flex flex-column items-center reveal" id="_work">
+      <div class="mw8-l ph4-m ph4 w-100">
+        <h2 class="f2 fw3 heading-color">
+          <span class="sub-heading-color">/</span> i’m good at things.</h2>
+        <h3 class="f3 fw2 sub-heading-color">especially, but not limited to, these things</h3>
+      </div>
+      <div class="mv4 flex-ns items-center-ns mw8-l w-80-l ph4-m">
+        <div class="heavy-box b--solid br2 b--near-white vh-50-l w-100-m bg-white" style="border-width: 1px; ">
+          <h3 class="ml4 heading-color mt4 f3 fw2">product design</h3>
+          <div class="ml4 highlight-color w-50" style="height: 2px;"></div>
+          <div class="flex justify-center ma4">
+            <img src="./assets/Product-Design.png" style="max-height: 384px; margin-bottom: -100px;" />
+          </div>
+        </div>
+        <div class="ml4-ns mh4 mt0-ns mt6">
+          <p class="measure body-color lh-copy ">from start to finish, planning to production. I work closely with developers to make sure that the best work comes
+            at the best time-cost. prioritised and perfected. </p>
+          <a href="https://getspiff.no/" target="_blank" class="link funny-link dim pointer"> see more at getspiff.no</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white subtle-shadow b--solid br2 b--black-10 ph6-l ph0-m pt5 mt6-l mt6-m flex justify-center" style="border-width: 1px;">
+      <div class="mw8-l ph4-m ph4 w-100">
+        <h3 class="f4 fw3">generally speaking</h3>
+        <div class="highlight-color w-25-l w-50-m w-75 mb0-ns mb3" style="height: 2px;"></div>
+        <div class="flex flex-row-ns flex-column justify-between">
+          <div class="w-30-ns flex flex-column ">
+            <p class="mb1 sub-heading-color">process development</p>
+            <p class="measure body-color lh-copy">i’m secretly in love with documentation. breaking ideas down into objects and rules makes the end product more
+              carefully considered and easier to iterate on. easier to break…</p>
+          </div>
+          <div class="w-30-ns">
+            <p class="mb1 sub-heading-color">branding and illustration</p>
+            <p class="body-color measure lh-copy">abstracting complex ideas into illustrations is an extention of good interfaces. keeping them on brand is an
+              obvious necessity.</p>
+          </div>
+          <div class="w-30-ns">
+            <p class="mb1 sub-heading-color">writing </p>
+            <p class="body-color measure lh-copy">designing and writing go hand-in-hand. articulating ideas before and after design makes for critical thinking
+              and deeper understanding of the product at every level.</p>
           </div>
         </div>
       </div>
-      <div class="flex items-center flex-column" style="background-color: #fcfcfc">
-        <div class="h3" id="_top"></div>
-        <div class="vh-75 w-100 flex items-center justify-center bg-black-10" style="background-image: url('./assets/Main-Image.png');background-repeat: no-repeat; background-size: cover; background-position: center;">
-          <div class="flex items-center flex-column">
-            <h1 style="font-size: 4rem;" class="fw5 heading-color"><span class="sub-heading-color">/</span> hi.</h1>
-            <a href="#_about" class="link link-to-section"> 
-              <div href="#_about"  class="grow pointer heavy-box ph6 pv1 bg-white" style="border-radius: 100px">
-                <p href="#_about" class="heading-color">oh, hello</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="mw8 w-100 pt7 pb6" id="_about">
-            <h2 class="f2 fw3 heading-color"><span class="sub-heading-color">/</span> i’m Tanya.</h2>
-          <h3 class="f3 fw2 sub-heading-color">they call me a product designer.</h3>
-          <p class="measure body-color mt5 lh-copy">i design interfaces, illustrate stuff and occasionally write interesting shit. i’m lead product designer at a Norwegian Fintech startup called <a href="https://getspiff.no/" target="_blank" class="funny-link link light-purple dim pointer">Spiff</a>. a couple years back you could find me at <a href="https://www.cerebra.co.za/" target="_blank" class="funny-link link light-purple dim pointer">Cerebra.</a> </p>
-        </div>
-        <div class="vh-75 mw8 w-100 flex">
-          <div class="w-third bg-black-10" style="background-image: url('./assets/Face.png'); background-size: cover; background-position: center; "></div>
-          <div class="ml2 w-two-thirds bg-black-10" style="background-image: url('./assets/Ice-cream.png'); background-size: cover; background-position: center;"></div>
-        </div>
-        <div class="pt7 pb6 w-100 flex flex-column items-center" id="_work">
-          <div class="mw8 w-100">
-              <h2 class="f2 fw3 heading-color"><span class="sub-heading-color">/</span> i’m good at things.</h2>
-            <h3 class="f3 fw2 sub-heading-color">especially, but not limited to, these things</h3>
-          </div>
-          <div class="mv4 flex items-center mw8 w-80">
-              <div class="heavy-box b--solid br2 b--near-white vh-50 " style="border-width: 1px; ">
-                  <h3 class="ml4 mt4 f3 fw2">product design.</h3>
-                  <div class="ml4 highlight-color w-50" style="height: 2px;"></div>
-                  <div class="flex justify-center ma4">
-                    <img src="./assets/Product-Design.png" style="max-height: 384px"/>
-                  </div>
-              </div>
-              <p class="ml4 measure body-color lh-copy">from start to finish, planning to production. I work closely with developers to make sure that the best work comes at the best time-cost.  prioritised and perfected. </p>
-            </div>
-        </div>
-        <div class=" bg-white subtle-shadow b--solid br2 b--black-10 mb5 ph6-l ph0-m pv5 mv6 flex justify-center" style="border-width: 1px;">
-          <div class="mw8 w-100">
-            <h3 class="f4 fw3">generally speaking</h3>
-            <div class="highlight-color w-25" style="height: 2px;"></div>
-            <div class="flex justify-between">
-              <div class="w-30 flex flex-column ">
-                <p class="mb1 sub-heading-color">process development</p>
-                <p class="measure body-color lh-copy">i’m secretly in love with documentation. breaking ideas down into objects and rules makes the end product more carefully considered and easier to iterate on. easier to break…</p>
-              </div>
-              <div class="w-30">
-                <p class="mb1 sub-heading-color">branding and illustration</p>
-                <p class="body-color measure lh-copy">abstracting complex ideas into illustrations is an extention of good interfaces. keeping them on brand is an obvious necessity.</p>
-              </div>
-              <div class="w-30">
-                <p class="mb1 sub-heading-color">writing </p>
-                <p class="body-color measure lh-copy">designing and writing go hand-in-hand. articulating ideas before and after design makes for critical thinking and deeper understanding of the product at every level.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mw8 w-100 mv6" id="_contact">
-          <h2 class="f2 fw3 heading-color"><span class="sub-heading-color">/</span> contact me.</h2>
-          <h3 class="f3 fw2 sub-heading-color">phone calls are awkward.</h3>
-          <div class="flex mt5 justify-between w-50">
-            <a href="https://dribbble.com/SoMuchFreeTime" target="_blank">
-              <svg class="svgShadow grow pointer" height="48" width="48" >
-                  <defs>
-                      <clipPath id="circleView">
-                          <circle  cx="24" cy="24" r="24" stroke="#EAEAEA" strokeWidth="0.5px" fill="white" />            
-                      </clipPath>
-                  </defs>
-                  <circle  cx="24" cy="24" r="24" stroke="#EAEAEA" strokeWidth="0.5px" fill="white" />
-                  <image xlink:href="./Icon/Dribbble@2x.png" x="12" y="12" height="24px" width="24px" preserveAspectRatio clip-path="url(#circleView)"/>
-              </svg>
-            </a>
-            <a href="https://medium.com/@somuchfreetime" target="_blank">
-              <svg class="svgShadow grow pointer" height="48" width="48" >
-                  <circle  cx="24" cy="24" r="24" stroke="#EAEAEA" strokeWidth="0.5px" fill="white" />
-                  <image xlink:href="./Icon/Medium@2x.png" x="12" y="12" height="24px" width="24px" preserveAspectRatio clip-path="url(#circleView)"/>
-              </svg>
-            </a>
-            <a href="https://www.behance.net/somuchfreetime" target="_blank">
-              <svg class="svgShadow grow pointer" height="48" width="48" >
-                  <circle  cx="24" cy="24" r="24" stroke="#EAEAEA" strokeWidth="0.5px" fill="white" />
-                  <image xlink:href="./Icon/Behance@2x.png" x="12" y="12" height="24px" width="24px" preserveAspectRatio clip-path="url(#circleView)"/>
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/somuch_freetime/" target="_blank">
-              <svg class="svgShadow grow pointer" height="48" width="48" >
-                  <circle  cx="24" cy="24" r="24" stroke="#EAEAEA" strokeWidth="0.5px" fill="white" />
-                  <image xlink:href="./Icon/Instagram@2x.png" x="12" y="12" height="24px" width="24px" preserveAspectRatio clip-path="url(#circleView)"/>
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/tanya-hirst-5025497a/" target="_blank">
-              <svg class="svgShadow grow pointer" height="48" width="48" >
-                  <circle  cx="24" cy="24" r="24" stroke="#EAEAEA" strokeWidth="0.5px" fill="white" />
-                  <image xlink:href="./Icon/LinkedIn@2x.png" x="12" y="12" height="24px" width="24px" preserveAspectRatio clip-path="url(#circleView)"/>
-              </svg>
-            </a>
-          </div>
-          <a class="link link-to-section dib mv6 dim pointer flex items-center">
-            <img href="#_top" src="./Icon/Arrow_Up-full@2x.png" height="24px"/>
-            <p href="#_top" class="link link-to-section ml2 sub-heading-color">you had me at hello</p>
-          </a>
-        </div>
-        <div class="bg-white h3 w-100 subtle-shadow flex justify-center items-center">
-          <div class="mw8 w-100">
-              <p class="black-20"> (c) Tanya Hirst</p>
-          </div>
-        </div>
+    </div>
+    <div class="mw8-l ph4-m ph4 w-100 pv6-ns pv5  reveal" id="_contact">
+      <h2 class="f2 fw3 heading-color mt5 mt6-ns">
+        <span class="sub-heading-color">/</span> contact me.</h2>
+      <h3 class="f3 fw2 sub-heading-color">phone calls are awkward.</h3>
+      <div class="flex mt5 justify-between w-50-ns w-100">
+        <a href="https://dribbble.com/SoMuchFreeTime" target="_blank">
+          <svg class="svgShadow grow pointer" height="48" width="48">
+            <defs>
+              <clipPath id="circleView">
+                <circle cx="24" cy="24" r="24" stroke="#EAEAEA" strokeWidth="0.5px" fill="white" />
+              </clipPath>
+            </defs>
+            <circle cx="24" cy="24" r="24" stroke="#EAEAEA" strokeWidth="0.5px" fill="white" />
+            <image xlink:href="./Icon/Dribbble@2x.png" x="12" y="12" height="24px" width="24px" preserveAspectRatio clip-path="url(#circleView)"
+            />
+          </svg>
+        </a>
+        <a href="https://medium.com/@somuchfreetime" target="_blank">
+          <svg class="svgShadow grow pointer" height="48" width="48">
+            <circle cx="24" cy="24" r="24" stroke="#EAEAEA" strokeWidth="0.5px" fill="white" />
+            <image xlink:href="./Icon/Medium@2x.png" x="12" y="12" height="24px" width="24px" preserveAspectRatio clip-path="url(#circleView)"
+            />
+          </svg>
+        </a>
+        <a href="https://www.behance.net/somuchfreetime" target="_blank">
+          <svg class="svgShadow grow pointer" height="48" width="48">
+            <circle cx="24" cy="24" r="24" stroke="#EAEAEA" strokeWidth="0.5px" fill="white" />
+            <image xlink:href="./Icon/Behance@2x.png" x="12" y="12" height="24px" width="24px" preserveAspectRatio clip-path="url(#circleView)"
+            />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/somuch_freetime/" target="_blank">
+          <svg class="svgShadow grow pointer" height="48" width="48">
+            <circle cx="24" cy="24" r="24" stroke="#EAEAEA" strokeWidth="0.5px" fill="white" />
+            <image xlink:href="./Icon/Instagram@2x.png" x="12" y="12" height="24px" width="24px" preserveAspectRatio clip-path="url(#circleView)"
+            />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/tanya-hirst-5025497a/" target="_blank">
+          <svg class="svgShadow grow pointer" height="48" width="48">
+            <circle cx="24" cy="24" r="24" stroke="#EAEAEA" strokeWidth="0.5px" fill="white" />
+            <image xlink:href="./Icon/LinkedIn@2x.png" x="12" y="12" height="24px" width="24px" preserveAspectRatio clip-path="url(#circleView)"
+            />
+          </svg>
+        </a>
       </div>
-  </body>
-  <script src="smooth.js"></script>
-  </html>
+      <a class="link link-to-section dib mv6-l mv5 dim pointer flex items-center">
+        <img href="#_top" src="./Icon/Arrow_Up-full@2x.png" height="24px" />
+        <p href="#_top" class="link link-to-section ml2 sub-heading-color">you had me at hello</p>
+      </a>
+    </div>
+    <div class="bg-white h3 w-100 subtle-shadow flex justify-center items-center">
+      <div class="mw8-l ph4-m ph4 w-100 flex justify-between">
+        <p class="black-20"> © Tanya Hirst</p>
+        <p class="black-20"> built by
+          <a target="_blank" class="link black o-20 glow" href="https://alcohollick.com/">alcohollick</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="smooth.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="scroll-animations.js"></script>
+
+</html>
