@@ -38,11 +38,22 @@
 .highlight-color {
     background-color: #85EDC5;
 }
+.highlight-text {
+    color: #85EDC5;
+}
 .contact-bg{
     background-color: #2A344E;
 }
 .footer-bg{
     background-color: #3E475F;
+}
+.product-image-margin {
+    margin-bottom: 4em;
+}
+@media screen and (min-width: 30em){
+    .product-image-margin {
+      margin-bottom: -60px;
+    }
 }
 
 
