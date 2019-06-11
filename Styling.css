@@ -1,0 +1,586 @@
+@font-face {
+    font-family: "montserratBold";
+    src: url(assets/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "montserratReg";
+    src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "montserratSemiB";
+    src: url(assets/fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "montserratMed";
+    src: url(assets/fonts/Montserrat-Medium.ttf);
+}
+
+/*COLOURS*/
+
+.colorGreenish {
+    color: #85EDC5;
+}
+
+.colorNight {
+    color: #2A344E;
+}
+
+.colorPeaches {
+    color: #DD7373;
+}
+
+.colorSeaweed {
+    color: #7A9999;
+}
+
+/* THESE ARE ELEMENTS */
+
+nav {
+    max-width:100vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 32px 10vw 20px 10vw;
+    position: sticky;
+    top:0;
+}  
+
+body {
+    margin: 0;
+    background-color: #F9F9F9; 
+}
+
+footer {
+    /* display: grid;
+    grid-template-columns: 2fr 3fr; */
+    margin: 32px 10vw 20px 10vw;
+    max-height: 112px;
+    padding-top: 100px;
+}
+
+form {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.linkInParagraph {
+    font-family: "montserratMed";
+    color: #DD7373;
+    text-decoration: none;
+}
+
+/* THESE ARE CLASSES */  
+
+/* NAVIGATION */
+
+.navLinkContainerClass {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+    justify-items: end;
+}
+
+@media screen and (min-width: 650px) {
+    .navLinksClass {
+    font-family: 'montserratMed';
+    font-size: 18px;
+    text-decoration: none;
+    color: #7A9999;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .navLinksClass {
+    justify-content: end;
+    font-family: 'montserratMed';
+    font-size: 16px;
+    text-decoration: none;
+    color: #7A9999;
+    align-self: end;
+    }
+}
+  
+.navLinksClass:hover {
+    color: #95EDC9;
+    font-family: 'montserratMed';
+    transition-duration: 500ms;
+}
+
+
+.logoClass {
+    height: 32px;
+}
+
+.logoClass:hover {
+    transform: scale(1.1);
+}
+
+
+/* MAIN CONTAINERS */
+
+.headerContainerClass { 
+    margin-bottom: 80px;
+}
+
+@media screen and (min-width: 650px) {
+    .contentContainerClass {
+    padding: 200px 10vw 180px 10vw;
+    transition-duration: 1s;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .contentContainerClass {
+    padding: 120px 10vw 100px 10vw;
+    transition-duration: 1s;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .frontTextClass {
+    font-family: "montserratBold";
+    font-size: 8vw; 
+    line-height: 8vw;
+    color:#2A344E;  
+    margin-top:-4vw; 
+    margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .frontTextClass {
+    font-family: "montserratBold";
+    font-size: 10vw; 
+    line-height: 10vw;
+    color:#2A344E;  
+    margin-top:-4vw; 
+    margin-bottom: 24px;
+    }
+}
+
+.shadowTextClass {
+    font-family: "montserratBold";
+    font-size: 9vw; 
+    line-height: 9vw;
+    color:#7A999910; 
+}
+
+@media screen and (min-width: 600px) {
+    .firstParagraphClass {
+    font-family: "montserratReg";
+    font-size: 22px;
+    line-height: 38px;
+    color: #7A9999;
+    margin-top: 64px; 
+    max-width: 65vw;
+    transition-duration: 500ms;  
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .firstParagraphClass {
+    font-family: "montserratReg";
+    font-size: 16px;
+    line-height: 28px;
+    color: #7A9999;
+    margin-top: 48px; 
+    max-width: 65vw; 
+    transition-duration: 500ms;
+    }
+}
+
+
+/* SKILLS SECTIONS */
+
+@media screen and (min-width: 650px) {
+    .skillStackClass {
+    display: grid;
+    grid-gap: 64px;
+    }
+}  
+
+@media screen and (max-width: 651px) {
+    .skillStackClass {
+    display: grid;
+    grid-gap: 32px;
+    }
+}  
+
+.skillComboClass {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-gap: 40px;
+    align-items: center;
+    justify-content: start;
+    max-width: 80vw;
+    transition: all ease-in-out .5s;    
+}
+
+@media screen and (min-width: 650px) {
+    .skillTitleClass {
+        font-family: 'montserratSemiB';
+        font-size: 28px; 
+        color: #2A344E;
+        justify-self: start;
+        min-width: 40vw;
+        transition-duration: 500ms;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .skillTitleClass {
+        font-family: 'montserratSemiB';
+        font-size: 18px; 
+        color: #2A344E;
+        justify-self: start;
+        min-width: 50vw;
+        transition-duration: 500ms;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 650px) {
+        .skillImageClass {
+        justify-self: start;
+        width: 112px;
+        transition-duration: 500ms;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .skillImageClass {
+    justify-self: start;
+    width: 72px;
+    transition-duration: 500ms;
+    }
+}
+
+/* POPUP */
+
+.skillPopupHeading {
+    font-family: 'montserratSemiB';
+    font-size: 28px; 
+    color: #2A344E;
+    justify-self: center;
+    margin-bottom: 24px;
+}
+
+.skillPopupBody {
+    font-family: 'montserratMed';
+    font-size: 18px; 
+    color: #7A9999;
+    justify-self: center;
+}
+
+.skillPopupImage {
+    justify-self: center;
+    width: 120px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    width: 60vw;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+
+.popup .close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    transition: all 200ms;
+    font-family: "montserratSemiB";
+    font-size: 32px;
+    text-decoration: none;
+    color: #2A344E;
+}
+
+.popup .close:hover {
+    color: #95EDC9;
+}
+
+.popup .content {
+    max-height: 80vh;
+    max-width: 80vw;
+    overflow: auto;
+}
+
+/* INPUTS AND BUTTONS */
+
+.inputComboClass {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.inputEmailClass {
+    background-color: #D9E8E8;
+    border-radius: 18px;
+    border: none;
+    width: 40vw;
+    height: 56px;
+    /* Margin-left: auto; */
+}
+
+.inputEmailClass:hover {
+    background-color: #A3CCCC;
+}
+
+.inputEmailClass:focus {
+    background-color: #B4D6D6;
+    border-radius: 18px;
+    border: none;
+    width: 40vw;
+    height: 56px;
+}
+
+.inputMessageClass {
+    background-color: #D9E8E8;
+    border-radius: 18px;
+    border: none;
+    width: 40vw;
+    height: 80px;
+    margin-top: 32px;
+}
+
+.inputMessageClass:hover {
+    background-color: #A3CCCC;
+}
+
+.inputMessageClass:focus {
+    background-color: #B4D6D6;
+    border-radius: 18px;
+    border: none;
+    width: 40vw;
+    height: 80px;
+    margin-top: 32px;
+}
+
+::placeholder {
+    color: #2A344E;
+    font-size: 18px;
+    font-family: "montserratReg";
+    padding: 24px 16px 24px 16px;
+}
+
+::placeholder:focus {
+    color: #7A9999;
+}
+
+@media screen and (min-width: 600px) { 
+    .button {
+    background-color: #95EDC9;
+    border: none;
+    border-radius: 18px;
+    width: 40vw;
+    height: 28px;
+    color: #2A344E;
+    padding: 16px;
+    text-align: center;
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    font-size: 18px;
+    font-family: "montserratSemiB";
+    transition-duration: 500ms;
+    }
+} 
+
+@media screen and (max-width: 601px) { 
+    .button {
+    background-color: #95EDC9;
+    border: none;
+    border-radius: 18px;
+    width: 60vw;
+    height: 28px;
+    color: #2A344E;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "montserratSemiB";
+    transition-duration: 500ms;
+    }
+} 
+
+.button:hover {
+    background-color: #FAC8CD;
+    transform: scale(1.03);
+    transition-duration: 300ms;
+    cursor: pointer;
+
+}
+
+.button:active{
+    background-color: #FAC8CD;
+    border: none;
+    outline: none;
+}
+
+
+/* SOCIAL AND LINKS */
+
+.portfolioContainerClass {
+    display: grid;
+    margin-top: 64px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 32px;
+    justify-items: start;
+    max-width: 60vw;
+}
+
+.portfolioLinkClass {
+    height: 24px;
+    justify-self: start;
+    align-items: center;
+    transition: all ease-in-out .5s;
+}
+
+.portfolioLinkClass:hover {
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+
+/* .footerLinksContainerClass {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 32px;
+    justify-self: end;
+    align-self: center;
+} */
+
+.footerTextClass {
+    font-family: 'montserratReg';
+    font-size: 14px;
+    color: #7A9999;
+    align-self: center;
+    justify-self: start;
+}
+
+
+/* Debug grid */
+/* body {        outline: 1px solid  #2980B9!important; }
+article {     outline: 1px solid  #3498DB!important; }
+nav {         outline: 1px solid  #0088C3!important; }
+aside {       outline: 1px solid  #33A0CE!important; }
+section {     outline: 1px solid  #66B8DA!important; }
+header {      outline: 1px solid  #99CFE7!important; }
+footer {      outline: 1px solid  #CCE7F3!important; }
+h1 {          outline: 1px solid  #162544!important; }
+h2 {          outline: 1px solid  #314E6E!important; }
+h3 {          outline: 1px solid  #3E5E85!important; }
+h4 {          outline: 1px solid  #449BAF!important; }
+h5 {          outline: 1px solid  #C7D1CB!important; }
+h6 {          outline: 1px solid  #4371D0!important; }
+main {        outline: 1px solid  #2F4F90!important; }
+address {     outline: 1px solid  #1A2C51!important; }
+div {         outline: 1px solid  #036CDB!important; }
+p {           outline: 1px solid  #AC050B!important; }
+hr {          outline: 1px solid  #FF063F!important; }
+pre {         outline: 1px solid  #850440!important; }
+blockquote {  outline: 1px solid  #F1B8E7!important; }
+ol {          outline: 1px solid  #FF050C!important; }
+ul {          outline: 1px solid  #D90416!important; }
+li {          outline: 1px solid  #D90416!important; }
+dl {          outline: 1px solid  #FD3427!important; }
+dt {          outline: 1px solid  #FF0043!important; }
+dd {          outline: 1px solid  #E80174!important; }
+figure {      outline: 1px solid  #FF00BB!important; }
+figcaption {  outline: 1px solid  #BF0032!important; }
+table {       outline: 1px solid  #00CC99!important; }
+caption {     outline: 1px solid  #37FFC4!important; }
+thead {       outline: 1px solid  #98DACA!important; }
+tbody {       outline: 1px solid  #64A7A0!important; }
+tfoot {       outline: 1px solid  #22746B!important; }
+tr {          outline: 1px solid  #86C0B2!important; }
+th {          outline: 1px solid  #A1E7D6!important; }
+td {          outline: 1px solid  #3F5A54!important; }
+col {         outline: 1px solid  #6C9A8F!important; }
+colgroup {    outline: 1px solid  #6C9A9D!important; }
+button {      outline: 1px solid  #DA8301!important; }
+datalist {    outline: 1px solid  #C06000!important; }
+fieldset {    outline: 1px solid  #D95100!important; }
+form {        outline: 1px solid  #D23600!important; }
+input {       outline: 1px solid  #FCA600!important; }
+keygen {      outline: 1px solid  #B31E00!important; }
+label {       outline: 1px solid  #EE8900!important; }
+legend {      outline: 1px solid  #DE6D00!important; }
+meter {       outline: 1px solid  #E8630C!important; }
+optgroup {    outline: 1px solid  #B33600!important; }
+option {      outline: 1px solid  #FF8A00!important; }
+output {      outline: 1px solid  #FF9619!important; }
+progress {    outline: 1px solid  #E57C00!important; }
+select {      outline: 1px solid  #E26E0F!important; }
+textarea {    outline: 1px solid  #CC5400!important; }
+details {     outline: 1px solid  #33848F!important; }
+summary {     outline: 1px solid  #60A1A6!important; }
+command {     outline: 1px solid  #438DA1!important; }
+menu {        outline: 1px solid  #449DA6!important; }
+del {         outline: 1px solid  #BF0000!important; }
+ins {         outline: 1px solid  #400000!important; }
+img     {     outline: 1px solid #22746B!important; }
+iframe  {     outline: 1px solid #64A7A0!important; }
+embed   {     outline: 1px solid #98DACA!important; }
+object  {     outline: 1px solid #00CC99!important; }
+param   {     outline: 1px solid #37FFC4!important; }
+video   {     outline: 1px solid #6EE866!important; }
+audio   {     outline: 1px solid #027353!important; }
+source  {     outline: 1px solid #012426!important; }
+canvas  {     outline: 1px solid #A2F570!important; }
+track   {     outline: 1px solid #59A600!important; }
+map     {     outline: 1px solid #7BE500!important; }
+area    {     outline: 1px solid #305900!important; }
+a {           outline: 1px solid #FF62AB!important; }
+em {          outline: 1px solid #800B41!important; }
+strong {      outline: 1px solid #FF1583!important; }
+i {           outline: 1px solid #803156!important; }
+b {           outline: 1px solid #CC1169!important; }
+u {           outline: 1px solid #FF0430!important; }
+s {           outline: 1px solid #F805E3!important; }
+small {       outline: 1px solid #D107B2!important; }
+abbr {        outline: 1px solid #4A0263!important; }
+q {           outline: 1px solid #240018!important; }
+cite {        outline: 1px solid #64003C!important; }
+dfn {         outline: 1px solid #B4005A!important; }
+sub {         outline: 1px solid #DBA0C8!important; }
+sup {         outline: 1px solid #CC0256!important; }
+time {        outline: 1px solid #D6606D!important; }
+code {        outline: 1px solid #E04251!important; }
+kbd {         outline: 1px solid #5E001F!important; }
+samp {        outline: 1px solid #9C0033!important; }
+var {         outline: 1px solid #D90047!important; }
+mark {        outline: 1px solid #FF0053!important; }
+bdi {         outline: 1px solid #BF3668!important; }
+bdo {         outline: 1px solid #6F1400!important; }
+ruby {        outline: 1px solid #FF7B93!important; }
+rt {          outline: 1px solid #FF2F54!important; }
+rp {          outline: 1px solid #803E49!important; }
+span {        outline: 1px solid #CC2643!important; }
+br {          outline: 1px solid #DB687D!important; }
+wbr {         outline: 1px solid #DB175B!important; } */
