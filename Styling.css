@@ -37,6 +37,9 @@
 }
 
 /* THESE ARE ELEMENTS */
+a   {
+        text-decoration: none;
+    }
 
 nav {
     max-width:100vw;
@@ -45,11 +48,11 @@ nav {
     padding: 32px 10vw 20px 10vw;
     position: sticky;
     top:0;
-}  
+}
 
 body {
     margin: 0;
-    background-color: #F9F9F9; 
+    background-color: #F9F9F9;
 }
 
 footer {
@@ -71,7 +74,7 @@ form {
     text-decoration: none;
 }
 
-/* THESE ARE CLASSES */  
+/* THESE ARE CLASSES */
 
 /* NAVIGATION */
 
@@ -101,7 +104,7 @@ form {
     align-self: end;
     }
 }
-  
+
 .navLinksClass:hover {
     color: #95EDC9;
     font-family: 'montserratMed';
@@ -120,7 +123,7 @@ form {
 
 /* MAIN CONTAINERS */
 
-.headerContainerClass { 
+.headerContainerClass {
     margin-bottom: 80px;
 }
 
@@ -141,10 +144,10 @@ form {
 @media screen and (min-width: 650px) {
     .frontTextClass {
     font-family: "montserratBold";
-    font-size: 8vw; 
+    font-size: 8vw;
     line-height: 8vw;
-    color:#2A344E;  
-    margin-top:-4vw; 
+    color:#2A344E;
+    margin-top:-4vw;
     margin-bottom: 100px;
     }
 }
@@ -152,19 +155,19 @@ form {
 @media screen and (max-width: 651px) {
     .frontTextClass {
     font-family: "montserratBold";
-    font-size: 10vw; 
+    font-size: 10vw;
     line-height: 10vw;
-    color:#2A344E;  
-    margin-top:-4vw; 
+    color:#2A344E;
+    margin-top:-4vw;
     margin-bottom: 24px;
     }
 }
 
 .shadowTextClass {
     font-family: "montserratBold";
-    font-size: 9vw; 
+    font-size: 9vw;
     line-height: 9vw;
-    color:#7A999910; 
+    color:#7A999910;
 }
 
 @media screen and (min-width: 600px) {
@@ -173,9 +176,9 @@ form {
     font-size: 22px;
     line-height: 38px;
     color: #7A9999;
-    margin-top: 64px; 
+    margin-top: 64px;
     max-width: 65vw;
-    transition-duration: 500ms;  
+    transition-duration: 500ms;
     }
 }
 
@@ -185,8 +188,8 @@ form {
     font-size: 16px;
     line-height: 28px;
     color: #7A9999;
-    margin-top: 48px; 
-    max-width: 65vw; 
+    margin-top: 48px;
+    max-width: 65vw;
     transition-duration: 500ms;
     }
 }
@@ -199,14 +202,14 @@ form {
     display: grid;
     grid-gap: 64px;
     }
-}  
+}
 
 @media screen and (max-width: 651px) {
     .skillStackClass {
     display: grid;
     grid-gap: 32px;
     }
-}  
+}
 
 .skillComboClass {
     display: grid;
@@ -215,13 +218,13 @@ form {
     align-items: center;
     justify-content: start;
     max-width: 80vw;
-    transition: all ease-in-out .5s;    
+    transition: all ease-in-out .5s;
 }
 
 @media screen and (min-width: 650px) {
     .skillTitleClass {
         font-family: 'montserratSemiB';
-        font-size: 28px; 
+        font-size: 28px;
         color: #2A344E;
         justify-self: start;
         min-width: 40vw;
@@ -233,7 +236,7 @@ form {
 @media screen and (max-width: 651px) {
     .skillTitleClass {
         font-family: 'montserratSemiB';
-        font-size: 18px; 
+        font-size: 18px;
         color: #2A344E;
         justify-self: start;
         min-width: 50vw;
@@ -262,7 +265,7 @@ form {
 
 .skillPopupHeading {
     font-family: 'montserratSemiB';
-    font-size: 28px; 
+    font-size: 28px;
     color: #2A344E;
     justify-self: center;
     margin-bottom: 24px;
@@ -270,7 +273,7 @@ form {
 
 .skillPopupBody {
     font-family: 'montserratMed';
-    font-size: 18px; 
+    font-size: 18px;
     color: #7A9999;
     justify-self: center;
 }
@@ -296,7 +299,7 @@ form {
     visibility: visible;
     opacity: 1;
 }
-  
+
 .popup {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -392,7 +395,7 @@ form {
     color: #7A9999;
 }
 
-@media screen and (min-width: 600px) { 
+@media screen and (min-width: 600px) {
     .button {
     background-color: #95EDC9;
     border: none;
@@ -408,9 +411,9 @@ form {
     font-family: "montserratSemiB";
     transition-duration: 500ms;
     }
-} 
+}
 
-@media screen and (max-width: 601px) { 
+@media screen and (max-width: 601px) {
     .button {
     background-color: #95EDC9;
     border: none;
@@ -426,7 +429,7 @@ form {
     font-family: "montserratSemiB";
     transition-duration: 500ms;
     }
-} 
+}
 
 .button:hover {
     background-color: #FAC8CD;
