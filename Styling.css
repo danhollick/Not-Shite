@@ -114,6 +114,7 @@ form {
 
 .logoClass {
     height: 32px;
+    pointer-events: none;
 }
 
 .logoClass:hover {
