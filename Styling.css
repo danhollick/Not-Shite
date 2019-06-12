@@ -37,15 +37,20 @@
 }
 
 /* THESE ARE ELEMENTS */
-a   {
-        text-decoration: none;
-    }
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
 
 nav {
     max-width:100vw;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding: 32px 10vw 20px 10vw;
+    padding: 32px 0vw 20px 0vw;
     position: sticky;
     top:0;
 }
@@ -53,14 +58,13 @@ nav {
 body {
     margin: 0;
     background-color: #F9F9F9;
+    margin: 0px 10vw 20px 10vw;
 }
 
 footer {
-    /* display: grid;
-    grid-template-columns: 2fr 3fr; */
-    margin: 32px 10vw 20px 10vw;
+    padding: 80px 0vw 20px 0vw;
     max-height: 112px;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 
 form {
@@ -85,23 +89,22 @@ form {
     justify-items: end;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 401px) {
     .navLinksClass {
     font-family: 'montserratMed';
-    font-size: 18px;
+    font-size: 2rem;
     text-decoration: none;
     color: #7A9999;
     }
 }
 
-@media screen and (max-width: 651px) {
+
+@media screen and (max-width: 400px) {
     .navLinksClass {
-    justify-content: end;
     font-family: 'montserratMed';
-    font-size: 16px;
+    font-size: 2.8rem;
     text-decoration: none;
     color: #7A9999;
-    align-self: end;
     }
 }
 
@@ -130,14 +133,14 @@ form {
 
 @media screen and (min-width: 650px) {
     .contentContainerClass {
-    padding: 200px 10vw 180px 10vw;
+    padding: 200px 0vw 180px 0vw;
     transition-duration: 1s;
     }
 }
 
 @media screen and (max-width: 651px) {
     .contentContainerClass {
-    padding: 120px 10vw 100px 10vw;
+    padding: 120px 0vw 100px 0vw;
     transition-duration: 1s;
     }
 }
@@ -171,46 +174,107 @@ form {
     color:#7A999910;
 }
 
-@media screen and (min-width: 600px) {
-    .firstParagraphClass {
-    font-family: "montserratReg";
-    font-size: 22px;
-    line-height: 38px;
-    color: #7A9999;
-    margin-top: 64px;
-    max-width: 65vw;
-    transition-duration: 500ms;
-    }
+.firstParagraphClass {
+font-family: "montserratReg";
+font-size: 1.8rem;
+line-height: 38px;
+color: #7A9999;
+margin-top: 64px;
+max-width: 65vw;
+transition-duration: 500ms;
 }
 
-@media screen and (max-width: 601px) {
+
+/* @media screen and (max-width: 400px) {
     .firstParagraphClass {
     font-family: "montserratReg";
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 28px;
     color: #7A9999;
     margin-top: 48px;
     max-width: 65vw;
     transition-duration: 500ms;
     }
-}
+} */
 
+
+
+.skillTitleClass {
+    font-family: 'montserratSemiB';
+    font-size: 28px;
+    /* color: #2A344E; */
+    color: purple;
+    justify-self: start;
+    min-width: 40vw;
+    transition-duration: 500ms;
+    text-decoration: none;
+}
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  @media only screen and (min-width: 1025px)  {
+
+    .skillTitleClass {
+        font-family: 'montserratSemiB';
+        font-size: 28px;
+        color: yellow;
+        }
+    }
+
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .skillTitleClass {
+        font-family: 'montserratSemiB';
+        font-size: 28px;
+        color: red;
+    }
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .skillTitleClass {
+        font-family: 'montserratSemiB';
+        font-size: 28px;
+        color: blue;
+        }    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .skillTitleClass {
+        font-family: 'montserratSemiB';
+        font-size: 28px;
+        color: green;
+    }
+  }
 
 /* SKILLS SECTIONS */
 
-@media screen and (min-width: 650px) {
+/* @media screen and (min-width: 650px) {
     .skillStackClass {
     display: grid;
     grid-gap: 64px;
     }
 }
 
-@media screen and (max-width: 651px) {
+@media screen and (max-width: 650px) {
     .skillStackClass {
     display: grid;
     grid-gap: 32px;
     }
-}
+} */
 
 .skillComboClass {
     display: grid;
@@ -222,7 +286,7 @@ form {
     transition: all ease-in-out .5s;
 }
 
-@media screen and (min-width: 650px) {
+/* @media screen and (min-width: 650px) {
     .skillTitleClass {
         font-family: 'montserratSemiB';
         font-size: 28px;
@@ -232,9 +296,9 @@ form {
         transition-duration: 500ms;
         text-decoration: none;
     }
-}
+} */
 
-@media screen and (max-width: 651px) {
+/* @media screen and (max-width: 651px) {
     .skillTitleClass {
         font-family: 'montserratSemiB';
         font-size: 18px;
@@ -260,80 +324,7 @@ form {
     width: 72px;
     transition-duration: 500ms;
     }
-}
-
-/* POPUP */
-
-.skillPopupHeading {
-    font-family: 'montserratSemiB';
-    font-size: 28px;
-    color: #2A344E;
-    justify-self: center;
-    margin-bottom: 24px;
-}
-
-.skillPopupBody {
-    font-family: 'montserratMed';
-    font-size: 18px;
-    color: #7A9999;
-    justify-self: center;
-}
-
-.skillPopupImage {
-    justify-self: center;
-    width: 120px;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
-
-.popup {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 20px;
-    width: 60vw;
-    position: relative;
-    transition: all .5s ease-in-out;
-}
-
-
-.popup .close {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    transition: all 200ms;
-    font-family: "montserratSemiB";
-    font-size: 32px;
-    text-decoration: none;
-    color: #2A344E;
-}
-
-.popup .close:hover {
-    color: #95EDC9;
-}
-
-.popup .content {
-    max-height: 80vh;
-    max-width: 80vw;
-    overflow: auto;
-}
+} */
 
 /* INPUTS AND BUTTONS */
 
@@ -396,7 +387,7 @@ form {
     color: #7A9999;
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
     .button {
     background-color: #95EDC9;
     border: none;
@@ -406,8 +397,6 @@ form {
     color: #2A344E;
     padding: 16px;
     text-align: center;
-    /* text-decoration: none; */
-    /* display: inline-block; */
     font-size: 18px;
     font-family: "montserratSemiB";
     transition-duration: 500ms;
@@ -430,7 +419,7 @@ form {
     font-family: "montserratSemiB";
     transition-duration: 500ms;
     }
-}
+} */
 
 .button:hover {
     background-color: #FAC8CD;
@@ -470,14 +459,6 @@ form {
 }
 
 /* FOOTER */
-
-/* .footerLinksContainerClass {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 32px;
-    justify-self: end;
-    align-self: center;
-} */
 
 .footerTextClass {
     font-family: 'montserratReg';
