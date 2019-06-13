@@ -47,29 +47,21 @@ a {
 }
 
 nav {
-    max-width:100vw;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding: 32px 0vw 20px 0vw;
+    padding: 2rem 0vw 1rem 0vw;
     position: sticky;
     top:0;
 }
 
 body {
-    margin: 0;
     background-color: #F9F9F9;
-    margin: 0px 10vw 20px 10vw;
+    margin: 0px 2.8rem 0px 2.8rem;
 }
 
 footer {
-    padding: 80px 0vw 20px 0vw;
-    max-height: 112px;
-    /* padding-top: 100px; */
-}
-
-form {
-    display: grid;
-    grid-template-rows: 1fr;
+    padding: 2rem 0vw 2rem 0vw;
+    max-height: 2.8rem;
 }
 
 .linkInParagraph {
@@ -78,160 +70,304 @@ form {
     text-decoration: none;
 }
 
-/* THESE ARE CLASSES */
-
 /* NAVIGATION */
 
-.navLinkContainerClass {
+.navLinkContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: end;
-    justify-items: end;
+    justify-items: center;
 }
 
-@media screen and (min-width: 401px) {
-    .navLinksClass {
+.navLinks {
     font-family: 'montserratMed';
-    font-size: 2rem;
+    font-size: 1.1rem;
     text-decoration: none;
     color: #7A9999;
-    }
 }
 
-
-@media screen and (max-width: 400px) {
-    .navLinksClass {
-    font-family: 'montserratMed';
-    font-size: 2.8rem;
-    text-decoration: none;
-    color: #7A9999;
-    }
-}
-
-.navLinksClass:hover {
+.navLinks:hover {
     color: #95EDC9;
-    font-family: 'montserratMed';
-    transition-duration: 500ms;
+    transition: ease-in-out 500ms;
 }
 
-
-.logoClass {
-    height: 32px;
+.logo {
+    height: 2.6rem;
     pointer-events: none;
 }
 
-.logoClass:hover {
+.logo:hover {
     transform: scale(1.1);
 }
 
-
 /* MAIN CONTAINERS */
 
-.headerContainerClass {
-    margin-bottom: 80px;
-}
-
-@media screen and (min-width: 650px) {
-    .contentContainerClass {
-    padding: 200px 0vw 180px 0vw;
+.contentContainer {
+    padding: 12rem 0vw 12rem 0vw;
     transition-duration: 1s;
-    }
 }
 
-@media screen and (max-width: 651px) {
-    .contentContainerClass {
-    padding: 120px 0vw 100px 0vw;
-    transition-duration: 1s;
-    }
-}
+/* SECTION TEXT */
 
-@media screen and (min-width: 650px) {
-    .frontTextClass {
+.frontText {
     font-family: "montserratBold";
-    font-size: 8vw;
-    line-height: 8vw;
+    font-size: 4.0rem;
+    line-height: 4.2rem;
     color:#2A344E;
-    margin-top:-4vw;
-    margin-bottom: 100px;
-    }
+    margin-top:-1.5rem;
 }
 
-@media screen and (max-width: 651px) {
-    .frontTextClass {
+.shadowText {
     font-family: "montserratBold";
-    font-size: 10vw;
-    line-height: 10vw;
-    color:#2A344E;
-    margin-top:-4vw;
-    margin-bottom: 24px;
-    }
+    font-size: 4.0rem;
+    line-height: 4.2rem;
+    color:#7A999912;
 }
 
-.shadowTextClass {
-    font-family: "montserratBold";
-    font-size: 9vw;
-    line-height: 9vw;
-    color:#7A999910;
-}
-
-.firstParagraphClass {
-font-family: "montserratReg";
-font-size: 1.8rem;
-line-height: 38px;
-color: #7A9999;
-margin-top: 64px;
-max-width: 65vw;
-transition-duration: 500ms;
-}
-
-
-/* @media screen and (max-width: 400px) {
-    .firstParagraphClass {
+.firstParagraph {
     font-family: "montserratReg";
     font-size: 1.6rem;
-    line-height: 28px;
+    line-height: 2.2rem;
     color: #7A9999;
-    margin-top: 48px;
-    max-width: 65vw;
+    margin-top: 4rem;
+    max-width: 24rem;
     transition-duration: 500ms;
-    }
-} */
+}
 
+/* SKILLS SECTION */
 
-
-.skillTitleClass {
+.skillTitle {
     font-family: 'montserratSemiB';
-    font-size: 28px;
-    /* color: #2A344E; */
-    color: purple;
+    font-size: 1.6rem;
+    color: #2A344E;
     justify-self: start;
-    min-width: 40vw;
     transition-duration: 500ms;
     text-decoration: none;
 }
+
+.skillStack {
+    margin-top: 4rem;
+    }
+    
+.skillCombo {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-gap: 2.4rem;
+    margin-top: 1.8rem;
+    align-items: center;
+    justify-content: start;
+    /* transition: all ease-in-out .5s; */
+}
+
+.skillImage {
+    justify-self: start;
+    width: 5.6rem;
+    transition-duration: 500ms;
+}
+
+/* SOCIAL AND LINKS */
+
+.portfolioContainer {
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    justify-items: start;
+    max-width: 6rem;
+}
+
+.portfolioLink {
+    height: 2.4rem;
+    justify-self: start;
+    align-self: start;
+    transition: all ease-in-out .5s;
+}
+
+.portfolioLink:hover {
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+
+.footerText {
+    font-family: 'montserratReg';
+    font-size: 1.2rem;
+    color: #7A9999;
+    align-self: center;
+    justify-self: start;
+}
+
+/* MEDIA QUERIES */
+
   /* 
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
   */
   @media only screen and (min-width: 1025px)  {
 
-    .skillTitleClass {
-        font-family: 'montserratSemiB';
-        font-size: 28px;
-        color: yellow;
-        }
+    nav {
+        padding: 5rem 0vw 1rem 0vw;
     }
+    
+    body {
+        margin: 0px 16rem 0px 16rem;
+    }
+    
+    footer {
+        padding: 2rem 0vw 4rem 0vw;
+        max-height: 2.8rem;
+    }
+
+    .contentContainer {
+        padding: 20rem 0vw 18rem 0vw;
+        transition-duration: 1s;
+    }
+    
+    .navLinks {
+        font-size: 2rem;
+        color: #7A9999;
+    }
+    
+    .logo {
+        height: 4.8rem;
+        pointer-events: none;
+    }
+    
+    .frontText {
+        font-size: 12rem;
+        line-height: 12rem;
+        margin-top:-4rem;
+    }
+    
+    .shadowText {
+        font-size: 12rem;
+        line-height: 12rem;
+    }
+    
+    .firstParagraph {
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+        margin-top: 5rem;
+        max-width: 64rem;
+    }
+    
+    .skillTitle {
+        font-size: 3rem;
+    }
+    
+    .skillStack {
+        margin-top: 10rem;
+        }
+        
+    .skillCombo {
+        grid-gap: 6.4rem;
+        margin-top: 4rem;
+    }
+    
+    .skillImage {
+        width: 12rem;
+    }
+    
+    .portfolioContainer {
+        margin-top: 6rem;
+        grid-gap: 5.6rem;
+        max-width: 64rem;
+    }
+    
+    .portfolioLink {
+        height: 2.4rem;
+    }
+    
+    .footerText {
+        font-size: 1.4rem;
+    }
+
+}
 
   /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .skillTitleClass {
-        font-family: 'montserratSemiB';
-        font-size: 28px;
-        color: red;
+
+    nav {
+        padding: 2.5rem 0vw 1rem 0vw;
     }
+    
+    body {
+        margin: 0px 10rem 0px 10rem;
+    }
+    
+    footer {
+        padding: 2rem 0vw 2.5rem 0vw;
+        max-height: 2.8rem;
+    }
+
+    .contentContainer {
+        padding: 14rem 0vw 18rem 0vw;
+        transition-duration: 1s;
+    }
+    
+    .navLinks {
+        font-size: 1.6rem;
+        color: 7A9999;
+    }
+    
+    .logo {
+        height: 3.6rem;
+        pointer-events: none;
+    }
+    
+    .frontText {
+        font-size: 8rem;
+        line-height: 8rem;
+        margin-top:-3rem;
+    }
+    
+    .shadowText {
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+    
+    .firstParagraph {
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        margin-top: 5rem;
+        max-width: 48rem;
+    }
+    
+    .skillTitle {
+        font-size: 2.6rem;
+        max-width: 40rem;
+    }
+    
+    .skillStack {
+        margin-top: 6rem;
+        }
+        
+    .skillCombo {
+        grid-gap: 4rem;
+        margin-top: 4rem;
+    }
+    
+    .skillImage {
+        width: 8.8rem;
+    }
+    
+    .portfolioContainer {
+        margin-top: 6rem;
+        grid-gap: 5.6rem;
+        max-width: 48rem;
+    }
+    
+    .portfolioLink {
+        height: 2.4rem;
+    }
+    
+    .footerText {
+        font-size: 1.4rem;
+    }
+
   }
   
   /* 
@@ -240,332 +376,256 @@ transition-duration: 500ms;
   */
   
   @media only screen and (min-width: 481px) and (max-width: 767px) {
-    .skillTitleClass {
-        font-family: 'montserratSemiB';
-        font-size: 28px;
-        color: blue;
-        }    
+    
+    nav {
+        padding: 2.5rem 0vw 1rem 0vw;
+    }
+    
+    body {
+        margin: 0px 6rem 0px 6rem;
+    }
+    
+    footer {
+        padding: 2rem 0vw 2rem 0vw;
+        max-height: 2.8rem;
+    }
+
+    .contentContainer {
+        padding: 10rem 0vw 12rem 0vw;
+        transition-duration: 1s;
+        max-width: 48rem;
+    }
+    
+    .navLinks {
+        font-size: 1.4rem;
+        color: #7A9999;
+    }  
+    
+    .logo {
+        height: 2.8rem;
+        pointer-events: none;
+    }
+    
+    .frontText {
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-top:-2rem;
+    }
+    
+    .shadowText {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    
+    .firstParagraph {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin-top: 5rem;
+        max-width: 38rem;
+    }
+    
+    .skillTitle {
+        font-size: 2rem;
+        max-width: 32rem;
+    }
+    
+    .skillStack {
+        margin-top: 6rem;
+        }
+        
+    .skillCombo {
+        grid-gap: 3rem;
+        margin-top: 2.4rem;
+    }
+    
+    .skillImage {
+        width: 7.2rem;
+    }
+    
+    .portfolioContainer {
+        margin-top: 4rem;
+        grid-gap: 5.6rem;
+        max-width: 32rem;
+    }
+    
+    .portfolioLink {
+        height: 2.4rem;
+    }
+    
+    .footerText {
+        font-size: 1.2rem;
+    }
+    
   }
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 413px to 480px
+  */
+  
+@media only screen and (min-width: 414px) and (max-width: 480px) {
+    
+    nav {
+        padding: 2.5rem 0vw 1rem 0vw;
+    }
+    
+    body {
+        margin: 0px 3.2rem 0px 3.2rem;
+    }
+    
+    footer {
+        padding: 2rem 0vw 2rem 0vw;
+        max-height: 2.8rem;
+    }
+    
+    .navLinks {
+        font-size: 1.4rem;
+        color: #7A9999;
+    }  
+    
+    .logo {
+        height: 2.6rem;
+        pointer-events: none;
+    }
+
+    .contentContainer {
+        padding: 12rem 0vw 12rem 0vw;
+        transition-duration: 1s;
+        max-width: 32rem;
+    }
+    
+    .frontText {
+        font-size: 5.4rem;
+        line-height: 5.4rem;
+        margin-top:-1.5rem;
+    }
+    
+    .shadowText {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+    }
+    
+    .firstParagraph {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin-top: 4rem;
+        max-width: 32rem;
+    }
+    
+    .skillTitle {
+        font-size: 1.8rem;
+    }
+    
+    .skillStack {
+        margin-top: 4rem;
+        }
+        
+    .skillCombo {
+        grid-gap: 2.4rem;
+        margin-top: 1.8rem;
+    }
+    
+    .skillImage {
+        width: 6.4rem;
+    }
+    
+    .portfolioContainer {
+        margin-top: 4rem;
+        grid-gap: 4.8rem;
+        max-width: 32rem;
+    }
+    
+    .portfolioLink {
+        height: 2.4rem;
+    }
+    
+    .footerText {
+        font-size: 1.2rem;
+    }
+ }
   
   /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
   
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .skillTitleClass {
-        font-family: 'montserratSemiB';
-        font-size: 28px;
-        color: green;
+@media only screen and (min-width: 320px) and (max-width: 413px) {
+    
+    nav {
+        padding: 2.5rem 0vw 1rem 0vw;
     }
-  }
-
-/* SKILLS SECTIONS */
-
-/* @media screen and (min-width: 650px) {
-    .skillStackClass {
-    display: grid;
-    grid-gap: 64px;
+    
+    body {
+        margin: 0px 2.4rem 0px 2.4rem;
     }
-}
-
-@media screen and (max-width: 650px) {
-    .skillStackClass {
-    display: grid;
-    grid-gap: 32px;
+    
+    footer {
+        padding: 2rem 0vw 2rem 0vw;
+        max-height: 2.8rem;
     }
-} */
-
-.skillComboClass {
-    display: grid;
-    grid-template-columns: auto 2fr;
-    grid-gap: 40px;
-    align-items: center;
-    justify-content: start;
-    max-width: 80vw;
-    transition: all ease-in-out .5s;
-}
-
-/* @media screen and (min-width: 650px) {
-    .skillTitleClass {
-        font-family: 'montserratSemiB';
-        font-size: 28px;
-        color: #2A344E;
-        justify-self: start;
-        min-width: 40vw;
-        transition-duration: 500ms;
-        text-decoration: none;
+    
+    .navLinks {
+        font-size: 1.24rem;
+        color: #7A9999;
+    }  
+    
+    .logo {
+        height: 2.6rem;
+        pointer-events: none;
     }
-} */
 
-/* @media screen and (max-width: 651px) {
-    .skillTitleClass {
-        font-family: 'montserratSemiB';
-        font-size: 18px;
-        color: #2A344E;
-        justify-self: start;
-        min-width: 50vw;
-        transition-duration: 500ms;
-        text-decoration: none;
+    .contentContainer {
+        padding: 10rem 0vw 12rem 0vw;
+        transition-duration: 1s;
+        max-width: 32rem;
     }
-}
-
-@media screen and (min-width: 650px) {
-        .skillImageClass {
-        justify-self: start;
-        width: 112px;
-        transition-duration: 500ms;
+    
+    .frontText {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        margin-top:-1.5rem;
     }
-}
-
-@media screen and (max-width: 651px) {
-    .skillImageClass {
-    justify-self: start;
-    width: 72px;
-    transition-duration: 500ms;
+    
+    .shadowText {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
     }
-} */
-
-/* INPUTS AND BUTTONS */
-
-.inputComboClass {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-.inputEmailClass {
-    background-color: #D9E8E8;
-    border-radius: 18px;
-    border: none;
-    width: 40vw;
-    height: 56px;
-    /* Margin-left: auto; */
-}
-
-.inputEmailClass:hover {
-    background-color: #A3CCCC;
-}
-
-.inputEmailClass:focus {
-    background-color: #B4D6D6;
-    border-radius: 18px;
-    border: none;
-    width: 40vw;
-    height: 56px;
-}
-
-.inputMessageClass {
-    background-color: #D9E8E8;
-    border-radius: 18px;
-    border: none;
-    width: 40vw;
-    height: 80px;
-    margin-top: 32px;
-}
-
-.inputMessageClass:hover {
-    background-color: #A3CCCC;
-}
-
-.inputMessageClass:focus {
-    background-color: #B4D6D6;
-    border-radius: 18px;
-    border: none;
-    width: 40vw;
-    height: 80px;
-    margin-top: 32px;
-}
-
-::placeholder {
-    color: #2A344E;
-    font-size: 18px;
-    font-family: "montserratReg";
-    padding: 24px 16px 24px 16px;
-}
-
-::placeholder:focus {
-    color: #7A9999;
-}
-
-/* @media screen and (min-width: 600px) {
-    .button {
-    background-color: #95EDC9;
-    border: none;
-    border-radius: 18px;
-    width: 40vw;
-    height: 28px;
-    color: #2A344E;
-    padding: 16px;
-    text-align: center;
-    font-size: 18px;
-    font-family: "montserratSemiB";
-    transition-duration: 500ms;
+    
+    .firstParagraph {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin-top: 4rem;
+        max-width: 28rem;
     }
-}
-
-@media screen and (max-width: 601px) {
-    .button {
-    background-color: #95EDC9;
-    border: none;
-    border-radius: 18px;
-    width: 60vw;
-    height: 28px;
-    color: #2A344E;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-family: "montserratSemiB";
-    transition-duration: 500ms;
+    
+    .skillTitle {
+        font-size: 1.6rem;
     }
-} */
-
-.button:hover {
-    background-color: #FAC8CD;
-    transform: scale(1.03);
-    transition-duration: 300ms;
-    cursor: pointer;
-
-}
-
-.button:active{
-    background-color: #FAC8CD;
-    border: none;
-    outline: none;
-}
-
-
-/* SOCIAL AND LINKS */
-
-.portfolioContainerClass {
-    display: grid;
-    margin-top: 64px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 32px;
-    justify-items: start;
-    max-width: 60vw;
-}
-
-.portfolioLinkClass {
-    height: 24px;
-    justify-self: start;
-    align-items: center;
-    transition: all ease-in-out .5s;
-}
-
-.portfolioLinkClass:hover {
-    transform: scale(1.2);
-}
-
-/* FOOTER */
-
-.footerTextClass {
-    font-family: 'montserratReg';
-    font-size: 14px;
-    color: #7A9999;
-    align-self: center;
-    justify-self: start;
-}
-
-
-/* Debug grid */
-/* body {        outline: 1px solid  #2980B9!important; }
-article {     outline: 1px solid  #3498DB!important; }
-nav {         outline: 1px solid  #0088C3!important; }
-aside {       outline: 1px solid  #33A0CE!important; }
-section {     outline: 1px solid  #66B8DA!important; }
-header {      outline: 1px solid  #99CFE7!important; }
-footer {      outline: 1px solid  #CCE7F3!important; }
-h1 {          outline: 1px solid  #162544!important; }
-h2 {          outline: 1px solid  #314E6E!important; }
-h3 {          outline: 1px solid  #3E5E85!important; }
-h4 {          outline: 1px solid  #449BAF!important; }
-h5 {          outline: 1px solid  #C7D1CB!important; }
-h6 {          outline: 1px solid  #4371D0!important; }
-main {        outline: 1px solid  #2F4F90!important; }
-address {     outline: 1px solid  #1A2C51!important; }
-div {         outline: 1px solid  #036CDB!important; }
-p {           outline: 1px solid  #AC050B!important; }
-hr {          outline: 1px solid  #FF063F!important; }
-pre {         outline: 1px solid  #850440!important; }
-blockquote {  outline: 1px solid  #F1B8E7!important; }
-ol {          outline: 1px solid  #FF050C!important; }
-ul {          outline: 1px solid  #D90416!important; }
-li {          outline: 1px solid  #D90416!important; }
-dl {          outline: 1px solid  #FD3427!important; }
-dt {          outline: 1px solid  #FF0043!important; }
-dd {          outline: 1px solid  #E80174!important; }
-figure {      outline: 1px solid  #FF00BB!important; }
-figcaption {  outline: 1px solid  #BF0032!important; }
-table {       outline: 1px solid  #00CC99!important; }
-caption {     outline: 1px solid  #37FFC4!important; }
-thead {       outline: 1px solid  #98DACA!important; }
-tbody {       outline: 1px solid  #64A7A0!important; }
-tfoot {       outline: 1px solid  #22746B!important; }
-tr {          outline: 1px solid  #86C0B2!important; }
-th {          outline: 1px solid  #A1E7D6!important; }
-td {          outline: 1px solid  #3F5A54!important; }
-col {         outline: 1px solid  #6C9A8F!important; }
-colgroup {    outline: 1px solid  #6C9A9D!important; }
-button {      outline: 1px solid  #DA8301!important; }
-datalist {    outline: 1px solid  #C06000!important; }
-fieldset {    outline: 1px solid  #D95100!important; }
-form {        outline: 1px solid  #D23600!important; }
-input {       outline: 1px solid  #FCA600!important; }
-keygen {      outline: 1px solid  #B31E00!important; }
-label {       outline: 1px solid  #EE8900!important; }
-legend {      outline: 1px solid  #DE6D00!important; }
-meter {       outline: 1px solid  #E8630C!important; }
-optgroup {    outline: 1px solid  #B33600!important; }
-option {      outline: 1px solid  #FF8A00!important; }
-output {      outline: 1px solid  #FF9619!important; }
-progress {    outline: 1px solid  #E57C00!important; }
-select {      outline: 1px solid  #E26E0F!important; }
-textarea {    outline: 1px solid  #CC5400!important; }
-details {     outline: 1px solid  #33848F!important; }
-summary {     outline: 1px solid  #60A1A6!important; }
-command {     outline: 1px solid  #438DA1!important; }
-menu {        outline: 1px solid  #449DA6!important; }
-del {         outline: 1px solid  #BF0000!important; }
-ins {         outline: 1px solid  #400000!important; }
-img     {     outline: 1px solid #22746B!important; }
-iframe  {     outline: 1px solid #64A7A0!important; }
-embed   {     outline: 1px solid #98DACA!important; }
-object  {     outline: 1px solid #00CC99!important; }
-param   {     outline: 1px solid #37FFC4!important; }
-video   {     outline: 1px solid #6EE866!important; }
-audio   {     outline: 1px solid #027353!important; }
-source  {     outline: 1px solid #012426!important; }
-canvas  {     outline: 1px solid #A2F570!important; }
-track   {     outline: 1px solid #59A600!important; }
-map     {     outline: 1px solid #7BE500!important; }
-area    {     outline: 1px solid #305900!important; }
-a {           outline: 1px solid #FF62AB!important; }
-em {          outline: 1px solid #800B41!important; }
-strong {      outline: 1px solid #FF1583!important; }
-i {           outline: 1px solid #803156!important; }
-b {           outline: 1px solid #CC1169!important; }
-u {           outline: 1px solid #FF0430!important; }
-s {           outline: 1px solid #F805E3!important; }
-small {       outline: 1px solid #D107B2!important; }
-abbr {        outline: 1px solid #4A0263!important; }
-q {           outline: 1px solid #240018!important; }
-cite {        outline: 1px solid #64003C!important; }
-dfn {         outline: 1px solid #B4005A!important; }
-sub {         outline: 1px solid #DBA0C8!important; }
-sup {         outline: 1px solid #CC0256!important; }
-time {        outline: 1px solid #D6606D!important; }
-code {        outline: 1px solid #E04251!important; }
-kbd {         outline: 1px solid #5E001F!important; }
-samp {        outline: 1px solid #9C0033!important; }
-var {         outline: 1px solid #D90047!important; }
-mark {        outline: 1px solid #FF0053!important; }
-bdi {         outline: 1px solid #BF3668!important; }
-bdo {         outline: 1px solid #6F1400!important; }
-ruby {        outline: 1px solid #FF7B93!important; }
-rt {          outline: 1px solid #FF2F54!important; }
-rp {          outline: 1px solid #803E49!important; }
-span {        outline: 1px solid #CC2643!important; }
-br {          outline: 1px solid #DB687D!important; }
-wbr {         outline: 1px solid #DB175B!important; } */
+    
+    .skillStack {
+        margin-top: 4rem;
+        }
+        
+    .skillCombo {
+        grid-gap: 2.4rem;
+        margin-top: 1.8rem;
+    }
+    
+    .skillImage {
+        width: 5.6rem;
+    }
+    
+    .portfolioContainer {
+        margin-top: 4rem;
+        grid-gap: 4.8rem;
+        max-width: 28rem;
+    }
+    
+    .portfolioLink {
+        height: 2.4rem;
+    }
+    
+    .footerText {
+        font-size: 1.2rem;
+    }
+ }
