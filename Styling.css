@@ -1,0 +1,631 @@
+@font-face {
+    font-family: "montserratBold";
+    src: url(assets/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "montserratReg";
+    src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "montserratSemiB";
+    src: url(assets/fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "montserratMed";
+    src: url(assets/fonts/Montserrat-Medium.ttf);
+}
+
+/*COLOURS*/
+
+.colorGreenish {
+    color: #85EDC5;
+}
+
+.colorNight {
+    color: #2A344E;
+}
+
+.colorPeaches {
+    color: #DD7373;
+}
+
+.colorSeaweed {
+    color: #7A9999;
+}
+
+/* THESE ARE ELEMENTS */
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 2rem 0vw 1rem 0vw;
+    position: sticky;
+    top:0;
+}
+
+body {
+    background-color: #F9F9F9;
+    margin: 0px 2.8rem 0px 2.8rem;
+}
+
+footer {
+    padding: 2rem 0vw 2rem 0vw;
+    max-height: 2.8rem;
+}
+
+.linkInParagraph {
+    font-family: "montserratMed";
+    color: #DD7373;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+.navLinkContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+    justify-items: center;
+}
+
+.navLinks {
+    font-family: 'montserratMed';
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #7A9999;
+}
+
+.navLinks:hover {
+    color: #95EDC9;
+    transition: ease-in-out 500ms;
+}
+
+.logo {
+    height: 2.6rem;
+    pointer-events: none;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* MAIN CONTAINERS */
+
+.contentContainer {
+    padding: 12rem 0vw 12rem 0vw;
+    transition-duration: 1s;
+}
+
+/* SECTION TEXT */
+
+.frontText {
+    font-family: "montserratBold";
+    font-size: 4.0rem;
+    line-height: 4.2rem;
+    color:#2A344E;
+    margin-top:-1.5rem;
+}
+
+.shadowText {
+    font-family: "montserratBold";
+    font-size: 4.0rem;
+    line-height: 4.2rem;
+    color:#7A999912;
+}
+
+.firstParagraph {
+    font-family: "montserratReg";
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #7A9999;
+    margin-top: 4rem;
+    max-width: 24rem;
+    transition-duration: 500ms;
+}
+
+/* SKILLS SECTION */
+
+.skillTitle {
+    font-family: 'montserratSemiB';
+    font-size: 1.6rem;
+    color: #2A344E;
+    justify-self: start;
+    transition-duration: 500ms;
+    text-decoration: none;
+}
+
+.skillStack {
+    margin-top: 4rem;
+    }
+    
+.skillCombo {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-gap: 2.4rem;
+    margin-top: 1.8rem;
+    align-items: center;
+    justify-content: start;
+    /* transition: all ease-in-out .5s; */
+}
+
+.skillImage {
+    justify-self: start;
+    width: 5.6rem;
+    transition-duration: 500ms;
+}
+
+/* SOCIAL AND LINKS */
+
+.portfolioContainer {
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    justify-items: start;
+    max-width: 6rem;
+}
+
+.portfolioLink {
+    height: 2.4rem;
+    justify-self: start;
+    align-self: start;
+    transition: all ease-in-out .5s;
+}
+
+.portfolioLink:hover {
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+
+.footerText {
+    font-family: 'montserratReg';
+    font-size: 1.2rem;
+    color: #7A9999;
+    align-self: center;
+    justify-self: start;
+}
+
+/* MEDIA QUERIES */
+
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  @media only screen and (min-width: 1025px)  {
+
+    nav {
+        padding: 5rem 0vw 1rem 0vw;
+    }
+    
+    body {
+        margin: 0px 16rem 0px 16rem;
+    }
+    
+    footer {
+        padding: 2rem 0vw 4rem 0vw;
+        max-height: 2.8rem;
+    }
+
+    .contentContainer {
+        padding: 20rem 0vw 18rem 0vw;
+        transition-duration: 1s;
+    }
+    
+    .navLinks {
+        font-size: 2rem;
+        color: #7A9999;
+    }
+    
+    .logo {
+        height: 4.8rem;
+        pointer-events: none;
+    }
+    
+    .frontText {
+        font-size: 12rem;
+        line-height: 12rem;
+        margin-top:-4rem;
+    }
+    
+    .shadowText {
+        font-size: 12rem;
+        line-height: 12rem;
+    }
+    
+    .firstParagraph {
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+        margin-top: 5rem;
+        max-width: 64rem;
+    }
+    
+    .skillTitle {
+        font-size: 3rem;
+    }
+    
+    .skillStack {
+        margin-top: 10rem;
+        }
+        
+    .skillCombo {
+        grid-gap: 6.4rem;
+        margin-top: 4rem;
+    }
+    
+    .skillImage {
+        width: 12rem;
+    }
+    
+    .portfolioContainer {
+        margin-top: 6rem;
+        grid-gap: 5.6rem;
+        max-width: 64rem;
+    }
+    
+    .portfolioLink {
+        height: 2.4rem;
+    }
+    
+    .footerText {
+        font-size: 1.4rem;
+    }
+
+}
+
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    nav {
+        padding: 2.5rem 0vw 1rem 0vw;
+    }
+    
+    body {
+        margin: 0px 10rem 0px 10rem;
+    }
+    
+    footer {
+        padding: 2rem 0vw 2.5rem 0vw;
+        max-height: 2.8rem;
+    }
+
+    .contentContainer {
+        padding: 14rem 0vw 18rem 0vw;
+        transition-duration: 1s;
+    }
+    
+    .navLinks {
+        font-size: 1.6rem;
+        color: 7A9999;
+    }
+    
+    .logo {
+        height: 3.6rem;
+        pointer-events: none;
+    }
+    
+    .frontText {
+        font-size: 8rem;
+        line-height: 8rem;
+        margin-top:-3rem;
+    }
+    
+    .shadowText {
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+    
+    .firstParagraph {
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        margin-top: 5rem;
+        max-width: 48rem;
+    }
+    
+    .skillTitle {
+        font-size: 2.6rem;
+        max-width: 40rem;
+    }
+    
+    .skillStack {
+        margin-top: 6rem;
+        }
+        
+    .skillCombo {
+        grid-gap: 4rem;
+        margin-top: 4rem;
+    }
+    
+    .skillImage {
+        width: 8.8rem;
+    }
+    
+    .portfolioContainer {
+        margin-top: 6rem;
+        grid-gap: 5.6rem;
+        max-width: 48rem;
+    }
+    
+    .portfolioLink {
+        height: 2.4rem;
+    }
+    
+    .footerText {
+        font-size: 1.4rem;
+    }
+
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    
+    nav {
+        padding: 2.5rem 0vw 1rem 0vw;
+    }
+    
+    body {
+        margin: 0px 6rem 0px 6rem;
+    }
+    
+    footer {
+        padding: 2rem 0vw 2rem 0vw;
+        max-height: 2.8rem;
+    }
+
+    .contentContainer {
+        padding: 10rem 0vw 12rem 0vw;
+        transition-duration: 1s;
+        max-width: 48rem;
+    }
+    
+    .navLinks {
+        font-size: 1.4rem;
+        color: #7A9999;
+    }  
+    
+    .logo {
+        height: 2.8rem;
+        pointer-events: none;
+    }
+    
+    .frontText {
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-top:-2rem;
+    }
+    
+    .shadowText {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    
+    .firstParagraph {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin-top: 5rem;
+        max-width: 38rem;
+    }
+    
+    .skillTitle {
+        font-size: 2rem;
+        max-width: 32rem;
+    }
+    
+    .skillStack {
+        margin-top: 6rem;
+        }
+        
+    .skillCombo {
+        grid-gap: 3rem;
+        margin-top: 2.4rem;
+    }
+    
+    .skillImage {
+        width: 7.2rem;
+    }
+    
+    .portfolioContainer {
+        margin-top: 4rem;
+        grid-gap: 5.6rem;
+        max-width: 32rem;
+    }
+    
+    .portfolioLink {
+        height: 2.4rem;
+    }
+    
+    .footerText {
+        font-size: 1.2rem;
+    }
+    
+  }
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 413px to 480px
+  */
+  
+@media only screen and (min-width: 414px) and (max-width: 480px) {
+    
+    nav {
+        padding: 2.5rem 0vw 1rem 0vw;
+    }
+    
+    body {
+        margin: 0px 3.2rem 0px 3.2rem;
+    }
+    
+    footer {
+        padding: 2rem 0vw 2rem 0vw;
+        max-height: 2.8rem;
+    }
+    
+    .navLinks {
+        font-size: 1.4rem;
+        color: #7A9999;
+    }  
+    
+    .logo {
+        height: 2.6rem;
+        pointer-events: none;
+    }
+
+    .contentContainer {
+        padding: 12rem 0vw 12rem 0vw;
+        transition-duration: 1s;
+        max-width: 32rem;
+    }
+    
+    .frontText {
+        font-size: 5.4rem;
+        line-height: 5.4rem;
+        margin-top:-1.5rem;
+    }
+    
+    .shadowText {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+    }
+    
+    .firstParagraph {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin-top: 4rem;
+        max-width: 32rem;
+    }
+    
+    .skillTitle {
+        font-size: 1.8rem;
+    }
+    
+    .skillStack {
+        margin-top: 4rem;
+        }
+        
+    .skillCombo {
+        grid-gap: 2.4rem;
+        margin-top: 1.8rem;
+    }
+    
+    .skillImage {
+        width: 6.4rem;
+    }
+    
+    .portfolioContainer {
+        margin-top: 4rem;
+        grid-gap: 4.8rem;
+        max-width: 32rem;
+    }
+    
+    .portfolioLink {
+        height: 2.4rem;
+    }
+    
+    .footerText {
+        font-size: 1.2rem;
+    }
+ }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+@media only screen and (min-width: 320px) and (max-width: 413px) {
+    
+    nav {
+        padding: 2.5rem 0vw 1rem 0vw;
+    }
+    
+    body {
+        margin: 0px 2.4rem 0px 2.4rem;
+    }
+    
+    footer {
+        padding: 2rem 0vw 2rem 0vw;
+        max-height: 2.8rem;
+    }
+    
+    .navLinks {
+        font-size: 1.24rem;
+        color: #7A9999;
+    }  
+    
+    .logo {
+        height: 2.6rem;
+        pointer-events: none;
+    }
+
+    .contentContainer {
+        padding: 10rem 0vw 12rem 0vw;
+        transition-duration: 1s;
+        max-width: 32rem;
+    }
+    
+    .frontText {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        margin-top:-1.5rem;
+    }
+    
+    .shadowText {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+    }
+    
+    .firstParagraph {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin-top: 4rem;
+        max-width: 28rem;
+    }
+    
+    .skillTitle {
+        font-size: 1.6rem;
+    }
+    
+    .skillStack {
+        margin-top: 4rem;
+        }
+        
+    .skillCombo {
+        grid-gap: 2.4rem;
+        margin-top: 1.8rem;
+    }
+    
+    .skillImage {
+        width: 5.6rem;
+    }
+    
+    .portfolioContainer {
+        margin-top: 4rem;
+        grid-gap: 4.8rem;
+        max-width: 28rem;
+    }
+    
+    .portfolioLink {
+        height: 2.4rem;
+    }
+    
+    .footerText {
+        font-size: 1.2rem;
+    }
+ }
