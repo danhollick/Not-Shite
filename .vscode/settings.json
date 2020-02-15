@@ -1,3 +1,4 @@
 {
-    "git.ignoreLimitWarning": true
+    "eslint.run": "onSave",
+    "eslint.alwaysShowStatus": true
 }
