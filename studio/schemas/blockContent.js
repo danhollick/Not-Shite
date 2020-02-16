@@ -73,10 +73,5 @@ export default {
       type: 'inlineImage',
       title: 'Image',
     },
-    {
-      name: 'gif',
-      type: 'gif',
-      title: 'Gif',
-    },
   ],
 }

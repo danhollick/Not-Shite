@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { colors } from '../utils/colors'
+import { below } from './layout'
 
 export const MassiveHeading = styled.h1`
   font-style: ${props => props.fontStyle || `normal`};
@@ -8,6 +9,9 @@ export const MassiveHeading = styled.h1`
   font-size: 88px;
   line-height: 115.7%;
   color: ${props => props.color || colors.ink};
+  ${below.med`
+    font-size: 72px;
+  `}
 `
 
 export const Heading = styled.h2`

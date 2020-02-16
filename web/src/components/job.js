@@ -13,7 +13,9 @@ const AnimatedJob = styled(Columns)`
   animation-fill-mode: both;
   animation-delay: ${props => `${props.delay * 150}ms`};
 `
-const StyledImg = styled(Img)``
+const StyledImg = styled(Img)`
+  transition: transform 200ms ease-in-out;
+`
 
 const LinkWrapper = styled.a`
   padding: 8px;

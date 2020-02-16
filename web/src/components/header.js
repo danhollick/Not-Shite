@@ -34,7 +34,7 @@ const Nav = styled.nav`
   padding: 24px 0px;
   grid-column-gap: 16px;
   .active {
-    color: ${colors.purplish};
+    color: ${colors.fire};
   }
   ${below.med`
   padding: 16px 0px;
@@ -44,7 +44,7 @@ const Nav = styled.nav`
 const Header = () => (
   <Nav>
     <NavLink
-      color={colors.fire}
+      // color={colors.fire}
       className="JustifyStart"
       activeClassName="active"
       to="/"

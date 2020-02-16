@@ -62,12 +62,13 @@ const Footer = () => {
           dan hollick
         </TextLink>{' '}
       </Overline>
-      <Columns className="JustifyEnd AlignCenter" padding={[2, 0]} spacing={12}>
-        <ImgLinkWrapper
-          className="JustifyEnd"
-          href="https://twitter.com/DanHollick"
-          target="_blank"
-        >
+      <Columns
+        className="JustifyEnd AlignCenter"
+        padding={[2, 0]}
+        spacing={12}
+        smallSpacing={2}
+      >
+        <ImgLinkWrapper href="https://twitter.com/DanHollick" target="_blank">
           <Img fixed={data.dribble.childImageSharp.fixed} />
         </ImgLinkWrapper>
         <ImgLinkWrapper href="https://github.com/danhollick" target="_blank">
