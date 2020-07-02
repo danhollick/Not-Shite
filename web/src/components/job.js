@@ -46,7 +46,7 @@ export const Job = ({
     query {
       arrow: file(relativePath: { eq: "Arrow.png" }) {
         childImageSharp {
-          fixed(width: 24) {
+          fixed(width: 16) {
             ...GatsbyImageSharpFixed_tracedSVG
           }
         }

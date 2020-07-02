@@ -68,16 +68,28 @@ const Footer = () => {
         spacing={12}
         smallSpacing={2}
       >
-        <ImgLinkWrapper href="https://twitter.com/DanHollick" target="_blank">
+        <ImgLinkWrapper
+          href="https://dribbble.com/TanyaTheHuman"
+          target="_blank"
+        >
           <Img fixed={data.dribble.childImageSharp.fixed} />
         </ImgLinkWrapper>
-        <ImgLinkWrapper href="https://github.com/danhollick" target="_blank">
+        <ImgLinkWrapper
+          href="https://medium.com/@tanyathehuman"
+          target="_blank"
+        >
           <Img fixed={data.medium.childImageSharp.fixed} />
         </ImgLinkWrapper>
-        <ImgLinkWrapper href="https://medium.com/@danhollick" target="_blank">
+        <ImgLinkWrapper
+          href="https://www.instagram.com/tanya_thehuman/"
+          target="_blank"
+        >
           <Img fixed={data.instagram.childImageSharp.fixed} />
         </ImgLinkWrapper>
-        <ImgLinkWrapper href="https://medium.com/@danhollick" target="_blank">
+        <ImgLinkWrapper
+          href="https://www.linkedin.com/in/tanya-the-human/"
+          target="_blank"
+        >
           <Img fixed={data.linked.childImageSharp.fixed} />
         </ImgLinkWrapper>
       </Columns>

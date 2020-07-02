@@ -52,7 +52,13 @@ const CaseStudy = ({ title, _rawBody, mainImage, description }) => (
   <CaseStudyWrapper>
     {/* <Img fluid={mainImage.asset.fluid} /> */}
     <Stack spacing={2}>
-      <Heading>{title}</Heading>
+      <Heading
+        css={`
+          max-width: 700px;
+        `}
+      >
+        {title}
+      </Heading>
       <Title>{description}</Title>
     </Stack>
     <PortableText className="fadeInUpSlight" blocks={_rawBody} />
