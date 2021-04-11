@@ -17,7 +17,6 @@ const StyledPortableText = styled(BasePortableText)`
     color: ${colors.ink};
   }
   h2 {
-    font-family: Noto Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
@@ -25,7 +24,6 @@ const StyledPortableText = styled(BasePortableText)`
     color: ${colors.ink};
   }
   h3 {
-    font-family: Noto Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -82,7 +80,7 @@ const StyledPortableText = styled(BasePortableText)`
 
   a {
     text-decoration: none;
-    color: ${colors.fire};
+    color: ${colors.green};
     transition: background-color 200ms ease-in-out;
     :hover {
       color: ${colors.fire};

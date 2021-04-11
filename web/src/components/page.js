@@ -7,65 +7,7 @@ import Footer from './footer'
 import { below } from './layout'
 
 const GlobalStyles = createGlobalStyle`
-@font-face {
-  font-family: Noto Sans;
-  font-weight: 400;
-  font-style: normal;
-  src: url("NotoSans-Regular.ttf") format("ttf");
-  font-display: swap;
-}
-@font-face {
-  font-family: Noto Sans;
-  font-weight: 400;
-  font-style: italic;
-  src: url("NotoSans-Italic.otf") format("otf");
-  font-display: swap;
-}
 
-@font-face {
-  font-family: Noto Sans;
-  font-weight: 400;
-  font-style: bold;
-  src: url("NotoSans-Bold.otf") format("otf");
-  font-display: swap;
-}
-@font-face {
-    font-family: Noto Sans;
-  font-weight: 400;
-  font-style: bold, italic;
-  src: url("NotoSans-BoldItalic.otf") format("otf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Noto Serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("NotoSerif-Regular.ttf") format("ttf");
-  font-display: swap;
-}
-@font-face {
-  font-family: Noto Serif;
-  font-weight: 400;
-  font-style: italic;
-  src: url("NotoSerif-Italic.otf") format("otf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Noto Serif;
-  font-weight: 400;
-  font-style: bold;
-  src: url("NotoSerif-Bold.otf") format("otf");
-  font-display: swap;
-}
-@font-face {
-    font-family: Noto Serif;
-  font-weight: 400;
-  font-style: bold, italic;
-  src: url("NotoSerif-BoldItalic.otf") format("otf");
-  font-display: swap;
-}
 
 .fadeInUpSlight{
   animation-name: fadeInUpSlight;
@@ -111,7 +53,7 @@ const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth
   }
   body {
-    font: 400 18px Noto Sans, sans-serif;
+    font: 400 18px 'Noto Sans', sans-serif;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;

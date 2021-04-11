@@ -6,7 +6,6 @@ import { colors } from '../utils/colors'
 import { Columns, below } from './layout'
 
 const NavLink = styled(Link)`
-  font-family: Noto Serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -34,7 +33,7 @@ const Nav = styled.nav`
   padding: 24px 0px;
   grid-column-gap: 16px;
   .active {
-    color: ${colors.fire};
+    color: ${colors.green};
   }
   ${below.med`
   padding: 16px 0px;
@@ -58,7 +57,7 @@ const Header = () => (
       partiallyActive
       to="/work/"
     >
-      work.
+      case studies.
     </NavLink>
   </Nav>
 )

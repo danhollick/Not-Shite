@@ -12,7 +12,7 @@ const SecondPage = () => (
     <SEO title="Work" />
     <Stack className="AlignCenter">
       <MassiveHeading>
-        Some work
+        Case studies
         <MassiveHeading as="span" color={colors.fire}>
           .
         </MassiveHeading>

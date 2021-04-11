@@ -51,10 +51,10 @@ const Footer = () => {
 
   return (
     <Columns>
-      <Overline className="AlignCenter" color={colors.fire}>
+      <Overline className="AlignCenter" color={colors.ink}>
         Built by{' '}
         <TextLink
-          color={colors.fire}
+          color={colors.green}
           href="https://alcohollick.com/"
           target="_blank"
         >
@@ -81,7 +81,7 @@ const Footer = () => {
           <Img fixed={data.medium.childImageSharp.fixed} />
         </ImgLinkWrapper>
         <ImgLinkWrapper
-          href="https://www.instagram.com/tanya_thehuman/"
+          href="https://www.instagram.com/heyfreckles_co/"
           target="_blank"
         >
           <Img fixed={data.instagram.childImageSharp.fixed} />

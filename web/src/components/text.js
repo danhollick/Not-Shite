@@ -4,7 +4,7 @@ import { below } from './layout'
 
 export const MassiveHeading = styled.h1`
   font-style: ${props => props.fontStyle || `normal`};
-  /* font-family: Noto Sans; */
+  /* font-family: 'Noto Sans', sans-serif; */
   font-weight: normal;
   font-size: 88px;
   line-height: 115.7%;
@@ -15,7 +15,7 @@ export const MassiveHeading = styled.h1`
 `
 
 export const Heading = styled.h2`
-  /* font-family: Noto Sans; */
+  font-family: 'Noto Sans', sans-serif;
   font-style: ${props => props.fontStyle || `normal`};
   font-weight: normal;
   font-size: 64px;
@@ -24,7 +24,7 @@ export const Heading = styled.h2`
 `
 
 export const SubHeading = styled.h3`
-  font-family: Noto Serif;
+  /* font-family: 'Noto Sans', sans-serif; */
   font-style: ${props => props.fontStyle || `normal`};
   font-weight: normal;
   font-size: 32px;
@@ -32,7 +32,7 @@ export const SubHeading = styled.h3`
   color: ${props => props.color || colors.fire};
 `
 export const Title = styled.h3`
-  font-family: Noto Serif;
+  /* font-family: Noto Serif; */
   font-style: ${props => props.fontStyle || `normal`};
   font-weight: normal;
   font-size: 24px;
@@ -51,7 +51,7 @@ export const Subtitle = styled.h5`
 
 export const Overline = styled.p`
   font-style: ${props => props.fontStyle || `normal`};
-  font-family: Noto Serif;
+  /* font-family: Noto Serif; */
   font-weight: normal;
   font-size: 16px;
   line-height: 115.7%;

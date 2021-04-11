@@ -8,6 +8,7 @@ import Page from '../components/page'
 import { TextLink, MassiveHeading } from '../components/text'
 import { Columns, Stack, below } from '../components/layout'
 import { JobList } from '../components/joblist'
+import { colors } from '../utils/colors'
 
 const StyledImage = styled(Img)`
   align-self: center;
@@ -16,7 +17,7 @@ const StyledImage = styled(Img)`
   ${below.med`
     grid-row: 1;
     justify-self: center;
-    width:  300px;
+    // width:  300px;
     margin: 40px 0px;
   `}
 `
@@ -45,10 +46,15 @@ const IndexPage = () => {
   return (
     <Page>
       <SEO title="Home" description="Welcome to my portfolio" />
-      <Columns smallCount={1} spacing={4} className="AlignCenter">
-        <StyledStack spacing={5} smallSpacing={10}>
-          <MassiveHeading>Oh, hello, I’m Tanya.</MassiveHeading>
-          <JobList />
+      <Columns smallCount={1} spacing={20} className="AlignCenter">
+        <StyledStack spacing={8} smallSpacing={10}>
+          <MassiveHeading>
+            Oh, hello, I’m Tanya
+            <MassiveHeading as="span" color={colors.fire}>
+              .
+            </MassiveHeading>
+          </MassiveHeading>
+          <JobList className="JustifyStretch" />
         </StyledStack>
         <StyledImage fluid={data.profileImage.childImageSharp.fluid} />
       </Columns>

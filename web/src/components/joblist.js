@@ -21,7 +21,7 @@ const ALL_JOBS_QUERY = graphql`
 export const JobList = ({ className }) => {
   const data = useStaticQuery(ALL_JOBS_QUERY)
   return (
-    <Stack spacing={4} className={className}>
+    <Stack spacing={2} className={className}>
       {data &&
         data.jobs.nodes.map((job, i) => (
           <Job key={i} delay={i} className="AlignEnd" {...job} />

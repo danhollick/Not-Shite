@@ -13,22 +13,26 @@ const AnimatedJob = styled(Columns)`
   animation-fill-mode: both;
   animation-delay: ${props => `${props.delay * 150}ms`};
 `
-const StyledImg = styled(Img)`
+const StyledSVG = styled.svg`
   transition: transform 200ms ease-in-out;
 `
 
 const LinkWrapper = styled.a`
-  padding: 8px;
+  padding: 16px;
+  background: #ffffff;
+  justify-self: stretch;
+  box-shadow: 0px 4px 20px rgba(193, 164, 235, 0.3);
+  border-radius: 16px;
   appearance: none;
   text-decoration: none;
-  border-radius: 4px;
-  transition: transform 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   :hover {
     cursor: pointer;
-    ${StyledImg} {
+    ${StyledSVG} {
       transform: scale(1.1);
     }
-    background-color: ${colors.off_white};
+    /* background-color: ${colors.off_white}; */
+    box-shadow: 0px 6px 36px rgba(193, 164, 235, 0.4);
   }
 `
 
@@ -65,10 +69,26 @@ export const Job = ({
             {/* </Subtitle> */}
           </Subtitle>
         </Stack>
-        <StyledImg
+        {/* <StyledImg
           className="AlignCenter JustifyEnd"
           fixed={data.arrow.childImageSharp.fixed}
-        />
+        /> */}
+        <StyledSVG
+          className="AlignCenter JustifyEnd"
+          width="10"
+          height="19"
+          viewBox="0 0 10 19"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1.5L9.00001 9.50001L1 17.5"
+            stroke={colors.green}
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </StyledSVG>
       </AnimatedJob>
     </LinkWrapper>
   )
